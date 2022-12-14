@@ -159,11 +159,6 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/power/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
 	$(LOCAL_PATH)/configs/power/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml
 
-# Properties
--include $(DEVICE_PATH)/configs/props/system.prop
--include $(DEVICE_PATH)/configs/props/product.prop
-PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
-
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.mt6768.rc
