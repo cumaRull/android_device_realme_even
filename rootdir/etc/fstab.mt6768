@@ -50,4 +50,4 @@ odm                                                    	/odm 		 	        ext4 	 
 /dev/block/by-name/boot_para 	            			/boot_para      		emmc 	 defaults 		 		 		 		                            	  defaults
 /dev/block/by-name/dtbo 		                		/dtbo 		        	emmc 	 defaults 		 		 		 		                            	  defaults
 /dev/block/by-name/otp 			                		/otp 		        	emmc 	 defaults 		 		 		 		                            	  defaults
-/dev/block/zram0                                        none                    swap     defaults                                                                 zramsize=2147483648,max_comp_streams=8 
+/dev/block/zram0                                        none                    swap     defaults                                                                 zramsize=2147483648
