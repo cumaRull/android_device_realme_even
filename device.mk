@@ -25,12 +25,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# IMS
-$(call inherit-product, vendor/realme/even-ims/even-ims.mk)
-
-# RealmeParts
-$(call inherit-product, packages/apps/RealmeParts/parts.mk)
-
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -79,10 +73,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service \
     android.hardware.configstore@1.1-service
-
-# DT2W
-PRODUCT_PACKAGES += \
-    DT2W-Service-even
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -140,11 +130,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.even
 
-# MTK IMS Overlays
-PRODUCT_PACKAGES += \
-    mtk-ims \
-    mtk-ims-telephony
-
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
@@ -152,11 +137,6 @@ PRODUCT_PACKAGES += \
     NfcNci \
     SecureElement \
     Tag
-
-# Offline charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
