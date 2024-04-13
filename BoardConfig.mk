@@ -128,7 +128,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # Sepolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS := $(DEVICE_PATH)/sepolicy/private
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
