@@ -150,11 +150,6 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
-# Offline charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
