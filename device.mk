@@ -182,10 +182,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
-
-# Screen Recorder
-PRODUCT_PACKAGES += \
-    ScreenRecorder
 	
 # Speed up
 PRODUCT_DEXPREOPT_SPEED_APPS += \

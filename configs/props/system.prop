@@ -35,7 +35,7 @@ persist.sys.nfc.antenna_area=bottom
 
 # OMX
 debug.stagefright.omx_default_rank.sw-audio=1
-debug.stagefright.omx_default_rank=0
+debug.stagefright.omx_default_rank=1000
 debug.stagefright.ccodec=0
 
 # Performance
