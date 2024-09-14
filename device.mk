@@ -87,18 +87,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.a2dp@1.0.vendor
 
-PRODUCT_PACKAGES += \
-    libbtconfigstore
-
-# Camera
-PRODUCT_PACKAGES += \
-    Camera
-
-# Configstore
-PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-service \
-    android.hardware.configstore@1.1-service
-
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
@@ -117,8 +105,10 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.even \
-    android.hardware.health-service.even-recovery
+    android.hardware.health@2.0 \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-impl.recovery \
+    android.hardware.health@2.1-service
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -221,5 +211,4 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 # Wi-Fi
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
-    wpa_supplicant.conf \
     WifiOverlay
